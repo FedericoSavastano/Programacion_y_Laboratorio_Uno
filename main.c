@@ -1,113 +1,140 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define CANTIDAD_NUMEROS 5
+#include "utn.h"
+
+
+
+char getChar (char *mensaje, char *mensajeError, char minimo, char maximo, int reintentos, char *resultado);
+
 
 int main()
 {
-    calcularMinimoYMaximo();
-    //solicitaNumeroYSacaPromedio();
-    //calcularPromedio();
+
+    char numeroIngresado;
+    int errorDeIngreso;
+    errorDeIngreso= getChar("Ingrese el numero", "Error", 0, 50, 2, &numeroIngresado);
+    if(errorDeIngreso)
+    {
+        printf("Se ha ingresado algo invalido");
+    }else
+    {
+        printf("El caracter ingresado es: %c", numeroIngresado);
+    }
     return 0;
 }
 
-int solicitaNumeroYSacaPromedio (void)
+
+int maindelfloat()
+{
+
+    float numeroIngresado;
+    int errorDeIngreso;
+    errorDeIngreso= getFloat("Ingrese el numero", "Error", 0, 50, 2, &numeroIngresado);
+    if(errorDeIngreso)
+    {
+        printf("Se ha ingresado algo invalido");
+    }else
+    {
+        printf("El numero ingresado es: %f", numeroIngresado);
+    }
+    return 0;
+}
+
+int elmainconint()
 {
     int numeroIngresado;
-    int acumulador=0;
-    int contador=0;
-    int promedio;
-
-    for(contador=0;contador<CANTIDAD_NUMEROS;contador++)
+    int errorDeIngreso;
+    errorDeIngreso= getInt("Ingrese el numero", "Error", 0, 50, 2, &numeroIngresado);
+    if(errorDeIngreso)
     {
-        printf("Ingrese un numero\n");
-        scanf("%d" , &numeroIngresado);
-        acumulador=acumulador+numeroIngresado;
-    }
-
-    //promedio= (float) acumulador/CANTIDAD_NUMEROS;
-    printf("el promedio de sus numeros ingresados es :%.2f\n", (float) acumulador/CANTIDAD_NUMEROS);
-    //tener cuidado de que si es F o D, entero o flotante
-    return 0;
-//essto es otra forma de hacerlo mas copado, lo del final
-
-    if(calcularPromedio(acumulador,CANTIDAD_NUMEROS,&promedio)==0)
+        printf("Se ha ingresado algo invalido");
+    }else
     {
-
-        printf("el promedio es:%.2f",promedio);
-
+        printf("El numero ingresado es: %d", numeroIngresado);
     }
-    else{
-        printf("ERROR");
-    }
-
     return 0;
 }
 
-
-int calcularPromedio (int acumulador , int cantidad , float *promedio) //el * es porque este valor de promedio hace referencia al promedio que usamos arriba, necesitamos que este valor sea el que asignamos en la otra funcion, no que se calcule aca.
+int isValidInt(int numero, int minimo, int maximo)
 {
-    int retorno= -1; //este seria el valor que es un error
-    if(cantidad > 0 && promedio != NULL)
+
+    if(numero >= minimo && numero <= maximo)
     {
-        *promedio=(float)acumulador/cantidad;
-        retorno= 0; //este seria el valor que esta bien, por eso cuando se cumple la funcion y cuando funciona la aplicacion, el retorno da bien. recien ahi, esto es para chequearlo.
+        return 1;
+    }
+
+        return 0;
+
+}
+
+int getInt(char *mensaje, char *mensajeError, int minimo, int maximo, int reintentos, int *resultado)
+{
+
+    int buffer; //aca guardo lo que el tipo ingreso
+    int i;
+    int retorno= -1;
+    if(mensaje != NULL && mensajeError != NULL && resultado != NULL && maximo >= minimo && reintentos >= 0)
+    {
+        for(i=0;i<=reintentos;i++)
+        {
+            printf("%s", mensaje);
+            scanf("%d", &buffer);
+            if(isValidInt(buffer, minimo, maximo))
+            {
+                *resultado = buffer;
+                retorno = 0;
+                break;
+            }else
+            {
+                printf("%s", mensajeError);
+            }
+        }
+
+    }
+
+    return retorno; //0;
+}
+
+
+
+
+fflush(stdin); para windows
+fpurge(stdin); para el resto
+
+
+char isValidChar (char numero, char minimo, char maximo)
+{
+    if(numero >= minimo && numero <= maximo)
+    {
+        return 1;
+    }
+    return 0;
+}
+
+char getChar (char *mensaje, char *mensajeError, char minimo, char maximo, int reintentos, char *resultado)
+{
+    char buffer;
+    int retorno = -1;
+
+    if(mensaje != NULL && mensajeError != NULL && maximo>= minimo && reintentos >= 0)
+    {
+        do
+        {
+            printf("%s", mensaje);
+            scanf("%c", &buffer);
+            if(isValidChar(buffer, minimo, maximo))
+            {
+                *resultado = buffer;
+                retorno = 0;
+                break;
+            }else
+            {
+                printf("%s", mensajeError);
+            }
+            reintentos--;
+        }while(reintentos >= 0);
     }
 
     return retorno;
 }
 
-int calcularMinimoYMaximo ()
-{
-    int numeroIngresado;
-    int numeroMaximo;
-    int numeroMinimo;
-    int numeroAuxiliar;
-    int contador=0;
-
-    printf("Ingrese un numero: \n");
-    scanf("%d", &numeroAuxiliar);
-    numeroMaximo=numeroAuxiliar;
-    numeroMinimo=numeroAuxiliar;
-
-    for(contador=0;contador<4;contador++)
-    {
-        printf("Ingrese un numero: \n");
-        scanf("%d", &numeroAuxiliar);
-
-        if(numeroAuxiliar>numeroMaximo)
-        {
-            numeroMaximo=numeroAuxiliar;
-        }
-        if(numeroAuxiliar<numeroMinimo)
-        {
-            numeroMinimo=numeroAuxiliar;
-        }
-
-    }
-
-    printf("El numero maximo es: %i\n", numeroMaximo);
-    printf("El numero minimo es %i\n", numeroMinimo);
-    return 0;
-
-
-//esta es otra version loca
-    int calcularMinimoYMaximoSegundaVersion(int valorIngresado,int*maximo;int*minimo)
-    {
-
-        int retorno = -1;
-        if(*maximo!=NULL && *minimo!=NULL)
-        {
-            if(valorIngresado > *maximo)
-            {
-                *maximo= valorIngresado;
-            }
-            if(valorIngresado < *minimo)
-            {
-                *minimo= valorIngresado;
-            }
-            retorno=0;
-        }
-
-        return retorno;
-    }
-}
