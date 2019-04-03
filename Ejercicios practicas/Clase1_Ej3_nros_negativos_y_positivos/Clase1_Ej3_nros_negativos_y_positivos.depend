@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1554326043 source:d:\programacion y laboratorio\programacion_y_laboratorio_uno\ejercicios practicas\clase1_ej3_nros_negativos_y_positivos\main.c
+	<stdio.h>
+	<stdlib.h>
+
