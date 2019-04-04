@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1554350979 source:d:\programacion y laboratorio\programacion_y_laboratorio_uno\ejercicios practicas\clase 4 ej1 bibliotecas y numero random\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1554350712 source:d:\programacion y laboratorio\programacion_y_laboratorio_uno\ejercicios practicas\clase 4 ej1 bibliotecas y numero random\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"utn.h"
+
+1554349224 d:\programacion y laboratorio\programacion_y_laboratorio_uno\ejercicios practicas\clase 4 ej1 bibliotecas y numero random\utn.h
+

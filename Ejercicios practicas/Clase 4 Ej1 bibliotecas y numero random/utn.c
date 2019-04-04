@@ -49,3 +49,20 @@ char getChar(char mensaje[])
     scanf("%c",&auxiliar);
     return auxiliar;
 }
+
+
+/**
+ * \brief Genera un número aleatorio
+ * \param desde Número aleatorio mínimo
+ * \param hasta Número aleatorio máximo
+ * \param iniciar Indica si se trata del primer número solicitado 1 indica que si
+ * \return retorna el número aleatorio generado
+ *
+ */
+
+char getNumeroAleatorio(int desde , int hasta, int iniciar)
+{
+    if(iniciar)
+        srand (time(NULL));
+    return desde + (rand() % (hasta + 1 - desde)) ;
+}

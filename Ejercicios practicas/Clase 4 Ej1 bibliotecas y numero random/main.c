@@ -1,7 +1,33 @@
-
+/******************************************************************
+* Programa: Ejemplo Clase 4
+*
+* Objetivo:
+*   A-  Desarrollar una biblioteca "utn.h" que posea funciones para
+*       pedirle al usuario el ingreso de datos
+*           - getInt()
+*           - getFloat()
+*           - getChar()
+*
+*   B-  Diseñar un programa para jugar a adivinar un número entre 0 y 100.
+*       El juego tiene que dar pistas de si el número introducido por el
+*       jugador está por encima o por debajo. El juego termina cuando se
+*       adivina el número o se decide terminar de jugar ingresando un número
+*       negativo. Permitir jugar tantas veces como lo desee el jugador y al
+*       salir mostrar su mejor puntuación. Utilizar la biblioteca del punto 1.
+*
+* Aspectos a destacar:
+*   -Se practica la declaración de funciones y se muestra como crear una
+*    biblioteca propia y utilizarla en un programa.
+*
+* Version: 0.1 del 29 diciembre de 2015
+* Autor: Mauricio Dávila
+* Revisión: Ernesto Gigliotti
+*
+* *******************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include "utn.h"
 
 /**
@@ -13,16 +39,44 @@
 
 int main()
 {
+    int numeroGenerado;
     int numeroIngresado;
-    float numeroComa;
-    char palabraIngresada;
+    char teclaIngresada;
+    int jugar;
 
-    printf("Hello world!\n");
-    numeroIngresado=getInt("ingrese un numero entero");
-    numeroComa=getFloat("Ingrese un numero con coma");
-    palabraIngresada=getChar("Ingrese un texto");
-    printf("Su numero es %d \n",numeroIngresado);
-    printf("Su numero con coma es %f \n",numeroComa);
-    printf("Su palabra es: %c \n",palabraIngresada);
+    teclaIngresada = 's';
+
+    while(teclaIngresada ==  's' )
+    {
+        numeroGenerado = getNumeroAleatorio(1,100,1);
+        printf("%d \n",numeroGenerado);
+
+        jugar = 1;
+
+        while(jugar==1)
+        {
+            numeroIngresado = getInt("Ingrese un numero, del 0 al 99 \n");
+            if(numeroIngresado<0)
+            {
+                jugar = 0;
+            }
+            else if(numeroIngresado==numeroGenerado)
+            {
+                printf("Felicitaciones, GANASTE!\n");
+                jugar = 0;
+            }
+            else if(numeroIngresado>numeroGenerado)
+            {
+                printf("Te pasaste...\n");
+            }
+            else if(numeroIngresado<numeroGenerado)
+            {
+                printf("Te falta...\n");
+            }
+
+        }
+
+        teclaIngresada = getChar("Seguis jugando? Ingresa S o N \n");
+    }
     return 0;
 }
