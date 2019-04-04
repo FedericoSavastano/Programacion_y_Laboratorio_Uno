@@ -49,7 +49,7 @@ int main()
     while(teclaIngresada ==  's' )
     {
         numeroGenerado = getNumeroAleatorio(1,100,1);
-        printf("%d \n",numeroGenerado);
+        //printf("%d \n",numeroGenerado);
 
         jugar = 1;
 
