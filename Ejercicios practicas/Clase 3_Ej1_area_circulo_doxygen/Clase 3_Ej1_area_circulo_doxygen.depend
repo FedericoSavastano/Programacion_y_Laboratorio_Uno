@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1554339529 source:d:\programacion y laboratorio\programacion_y_laboratorio_uno\ejercicios practicas\clase 3_ej1_area_circulo_doxygen\main.c
+	<stdio.h>
+	<stdlib.h>
+
