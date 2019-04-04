@@ -27,6 +27,31 @@ int main()
     bufferEdad = *(pEdades+188); // si hago esto, me desplazo desde la direccion base dle array, mas 188 lugares
     bufferEdad = *pEdades+188; //** si hago esto al puntero le sumo 188, al valor que tenia guardado ahi. hace una suma
 
+    //** estos son ejemplos para verlos, pero si estuviese bien hecho tendria que ir con defines e indices y demas
+
+
+
+    int getInt ( char* msg,
+                 char* msgErr,
+                 int maximo,
+                 int minimo,
+                 int reintentos,
+                 int* resultado )
+
+                 //**lo que salga de aca lo voy a mandar al de abajo
+
+
+
+    int getArrayInt (   char* msg,
+                        char* msgErr,
+                        int maximo,
+                        int minimo,
+                        int reintentos,
+                        int* arrayResultado,
+                        int limite )
+
+
+
 
 
     return 0;
