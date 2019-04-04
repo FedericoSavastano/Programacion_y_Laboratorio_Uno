@@ -60,6 +60,7 @@ float ingresarNumero()
 
 /**
 *\brief con el numero ingresado, es el radio y con eso calculo el area
+*\param el numero que obtuve de numeroIngresado
 *\return el area del circulo
 */
 
