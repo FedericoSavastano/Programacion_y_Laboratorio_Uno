@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1554856550 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Ejercicios en clase/martes ejercicio abril nueve/ejercico martes nueve/main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcion.h"
+
+1554856461 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Ejercicios en clase/martes ejercicio abril nueve/ejercico martes nueve/funcion.c
+	<stdio.h>
+	<stdlib.h>
+	"funcion.h"
+
+1554854846 /home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Ejercicios en clase/martes ejercicio abril nueve/ejercico martes nueve/funcion.h
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1554853397 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Ejercicios en clase/jueves 4 abril/martes 9 abril ejercicio 1/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+
