@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1555490962 source:d:\programacionnnn\programacion_y_laboratorio_uno\ejercicios practicas\clase 5 ej 1 arrays\clase 5 ej 1 arrays\utn.c
+	<stdio.h>
+	<stdlib.h>
+
+1555491918 source:d:\programacionnnn\programacion_y_laboratorio_uno\ejercicios practicas\clase 5 ej 1 arrays\clase 5 ej 1 arrays\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1555491504 d:\programacionnnn\programacion_y_laboratorio_uno\ejercicios practicas\clase 5 ej 1 arrays\clase 5 ej 1 arrays\utn.h
+
