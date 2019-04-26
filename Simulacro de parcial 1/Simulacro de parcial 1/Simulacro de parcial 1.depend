@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1556239587 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Simulacro de parcial 1/Simulacro de parcial 1/main.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"pantallas.h"
+	"publicidad.h"
+	<string.h>
+	<ctype.h>
+
+1556231351 /home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Simulacro de parcial 1/Simulacro de parcial 1/utn.h
+	<stdio.h>
+	<stdlib.h>
+
+1556239207 /home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Simulacro de parcial 1/Simulacro de parcial 1/pantallas.h
+
+1556231276 /home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Simulacro de parcial 1/Simulacro de parcial 1/publicidad.h
+
+1556239706 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Simulacro de parcial 1/Simulacro de parcial 1/utn.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	<ctype.h>
+
+1556239189 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Simulacro de parcial 1/Simulacro de parcial 1/pantallas.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"pantallas.h"
+	"publicidad.h"
+	<string.h>
+	<ctype.h>
+
+1556231618 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Simulacro de parcial 1/Simulacro de parcial 1/publicidad.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"pantallas.h"
+	"publicidad.h"
+	<string.h>
+	<ctype.h>
+
+1556239572 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/Simulacro de parcial 1/Simulacro de parcial 1/utn_isValids.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	<ctype.h>
+
