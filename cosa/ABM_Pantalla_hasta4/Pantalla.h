@@ -26,4 +26,6 @@ int pan_findPanById(Pantalla* pPantalla, int len, int idE);
 int pan_findFree(Pantalla* pPantalla, int len);
 
 int pan_getID (Pantalla* pPantalla,int len,char* msgE,int tries);
+void getPantallaByID (Publicidad string1[],Pantalla string2[],int cantidadElementos);
+
 #endif // PANTALLA_H_INCLUDED

@@ -4,6 +4,7 @@
 #include "Pantalla.h"
 #include "Publicidad.h"
 #include "utn_strings.h"
+
 static int generarId(void);
 
 int pub_initPublicidad(Publicidad* pPublicidad,int len)

@@ -17,10 +17,10 @@ int main()
 
     pan_initPantalla(visores,LEN_LISTA);
     pub_initPublicidad(Marketing,LEN_LISTA);
-    while(opcion!=6)
+    while(opcion!=8)
     {
         getIntInRange(&opcion,"\n1)Alta de pantalla\n2)Modificar datos de pantalla\n3)Baja de pantalla\n"
-                      "4)Contratar Publicidad\n5)Mostrar Pantallas\n6)Salir\n\n    INGRESE OPCION: ","ERROR\n",1,6,3);
+                      "4)Contratar Publicidad\n5)Mostrar Pantallas\n6)Ordenar por precio\n 7) mostrar contratados de menos de 10 dias \n8)Sali de aca\n\n    INGRESE OPCION: ","ERROR\n",1,9,3);
         switch(opcion)
         {
             case 1:
@@ -93,6 +93,12 @@ int main()
                 {
                     printf("\n----No hay PANTALLAS en la NOMINA!----\n");
                 }
+
+
+                getPantallaByID(Marketing,visores,LEN_LISTA);
+
+
+
                 break;
             }
             case 5:
@@ -102,6 +108,18 @@ int main()
                     pan_printPantalla(visores,LEN_LISTA);
                     pub_printContrataciones2(Marketing,LEN_LISTA);
                 }
+                break;
+            }
+
+            case 6:
+            {
+                pan_orderByPrice(visores,LEN_LISTA);
+                break;
+            }
+
+            case 7:
+            {
+                getPantallaByID(Marketing,visores,LEN_LISTA);
                 break;
             }
         }

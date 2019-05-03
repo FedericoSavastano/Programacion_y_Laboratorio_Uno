@@ -176,6 +176,14 @@ int pan_orderByPrice(Pantalla* pPantalla, int len)
                 buffer=pPantalla[i];
                 pPantalla[i]=pPantalla[j];
                 pPantalla[j]=buffer;
+            }else if(pPantalla[i].precio==pPantalla[j].precio)//loque puso el prof //
+            {
+                if(strncmp(pPantalla[i].nombre,pPantalla[j].nombre,50)>1)
+                {
+                    buffer=pPantalla[i];
+                    pPantalla[i]=pPantalla[j];
+                    pPantalla[j]=buffer;
+                }
             }
         }
     }
@@ -281,3 +289,22 @@ static int generarId(void)
     static int idPant=0;
     return idPant++;
 }
+
+
+void getPantallaByID (Publicidad string1[],Pantalla string2[],int cantidadElementos)
+{
+    int i;
+    for(i=0;i<cantidadElementos;i++)
+    {
+        if(string1[i].isEmpty!= 0)
+        {
+            if(string1[i].dias <= 10)
+             {
+                printf("Nombre de la pantalla %s",string2[string1[i].idPantalla-1].nombre);
+
+
+             }
+        }
+    }
+}
+

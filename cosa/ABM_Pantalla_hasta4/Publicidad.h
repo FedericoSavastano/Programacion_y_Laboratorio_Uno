@@ -22,5 +22,6 @@ int pub_findFree(Publicidad* pPublicidad, int len);
 int pub_getID (Publicidad* pPublicidad,int len,char* msgE,int tries);
 
 void pub_printContrataciones2(Publicidad* lista,int len);
+void getPantallaByID (Publicidad string1[],Pantalla string2[],int cantidadElementos);
 
 #endif // PUBLICIDAD_H_INCLUDED

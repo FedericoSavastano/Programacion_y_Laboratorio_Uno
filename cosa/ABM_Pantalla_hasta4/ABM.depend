@@ -181,7 +181,7 @@
 	<string.h>
 	"utn_strings.h"
 
-1556835421 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/cosa/ABM_Pantalla_hasta4/main.c
+1556843159 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/cosa/ABM_Pantalla_hasta4/main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -191,11 +191,11 @@
 
 1556835421 /home/alumno/Savastano/Programacion_y_Laboratorio_Uno/cosa/ABM_Pantalla_hasta4/utn_strings.h
 
-1556835421 /home/alumno/Savastano/Programacion_y_Laboratorio_Uno/cosa/ABM_Pantalla_hasta4/Pantalla.h
+1556843520 /home/alumno/Savastano/Programacion_y_Laboratorio_Uno/cosa/ABM_Pantalla_hasta4/Pantalla.h
 
 1556835421 /home/alumno/Savastano/Programacion_y_Laboratorio_Uno/cosa/ABM_Pantalla_hasta4/Publicidad.h
 
-1556835421 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/cosa/ABM_Pantalla_hasta4/Pantalla.c
+1556842688 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/cosa/ABM_Pantalla_hasta4/Pantalla.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -203,7 +203,7 @@
 	"Publicidad.h"
 	"utn_strings.h"
 
-1556835421 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/cosa/ABM_Pantalla_hasta4/Publicidad.c
+1556835930 source:/home/alumno/Savastano/Programacion_y_Laboratorio_Uno/cosa/ABM_Pantalla_hasta4/Publicidad.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
