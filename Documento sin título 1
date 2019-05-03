@@ -1,0 +1,24 @@
+Asociado(entidad)
+is empty / o estado
+Id
+Dni
+nombre
+apellido
+edad
+HACER ABM
+
+
+llamada(entidad)
+motivo
+id asociado
+id llamada
+estado
+tiempo
+id ambulancia
+HACER ABM
+
+
+
+
+
+
