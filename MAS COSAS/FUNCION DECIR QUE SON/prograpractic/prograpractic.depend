@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1556392366 source:d:\program\prograpractic\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1556350233 d:\program\prograpractic\funciones.h
+
+1556392182 source:d:\program\prograpractic\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1556392182 source:d:\progra arreglo de git\program\prograpractic\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1556350233 d:\progra arreglo de git\program\prograpractic\funciones.h
+

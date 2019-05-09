@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1557127012 source:d:\progra clas 7 abm\pruebamodeloparcial1\pruebamodeloparcial1\lib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lib.h"
+
+1557127949 d:\progra clas 7 abm\pruebamodeloparcial1\pruebamodeloparcial1\lib.h
+
+1557127575 source:d:\progra clas 7 abm\pruebamodeloparcial1\pruebamodeloparcial1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lib.h"
+

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1556826651 source:d:\progra clas 7 abm\versprofcopiada\versprofcopiada\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"utn.h"
+
+1556826649 d:\progra clas 7 abm\versprofcopiada\versprofcopiada\utn.h
+
+1556826651 source:d:\progra clas 7 abm\versprofcopiada\versprofcopiada\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+

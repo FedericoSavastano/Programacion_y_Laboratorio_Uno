@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1557243550 source:d:\programacion prueba ambulancias y eso\pruebaambuilanciasytal\lib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lib.h"
+
+1557243048 d:\programacion prueba ambulancias y eso\pruebaambuilanciasytal\lib.h
+
+1557244393 source:d:\programacion prueba ambulancias y eso\pruebaambuilanciasytal\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lib.h"
+

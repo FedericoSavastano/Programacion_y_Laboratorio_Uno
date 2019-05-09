@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "funciones.h"
+
+void mostrarMenu()
+{
+
+
+    printf("1. Ingresar un dato\n");
+    printf("2. decir que dato es\n");
+}

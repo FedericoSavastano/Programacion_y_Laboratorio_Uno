@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1556870670 source:d:\progra clas 7 abm\aversisale\abmaversisale\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1556870668 d:\progra clas 7 abm\aversisale\abmaversisale\funciones.h
+
+1556933330 source:d:\progra clas 7 abm\aversisale\abmaversisale\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+

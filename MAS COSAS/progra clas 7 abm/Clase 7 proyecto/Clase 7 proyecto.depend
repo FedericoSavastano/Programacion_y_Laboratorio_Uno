@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1556829278 source:d:\progra clas 7 abm\clase 7 proyecto\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1556827551 d:\progra clas 7 abm\clase 7 proyecto\funciones.h
+
+1556828826 source:d:\progra clas 7 abm\clase 7 proyecto\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
